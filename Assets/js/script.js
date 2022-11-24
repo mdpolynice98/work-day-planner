@@ -1,6 +1,6 @@
 var saveBtn = $(".saveBtn");
 
-$("#currentDay").text(moment().format('dddd MMMM Do YYYY'));
+var currently = moment().format('dddd MMMM Do YYYY', 'h:mm:ss');
 
 
 saveBtn.on("click", function() {
@@ -37,14 +37,14 @@ function useTimePlanner() {
         });
 };
 
-$("#first-hour .description").val(localStorage.getItem("first-hour"));
-$("#second-hour .description").val(localStorage.getItem("second-hour"));
-$("#third-hour .description").val(localStorage.getItem("third-hour"));
-$("#fourth-hour .description").val(localStorage.getItem("fourth-hour"));
-$("#fifth-hour .description").val(localStorage.getItem("fifth-hour"));
-$("#sixth-hour .description").val(localStorage.getItem("sixth-hour"));
-$("#seventh-hour .description").val(localStorage.getItem("seventh-hour"));
-$("#eigth-hour .description").val(localStorage.getItem("eighth-hour"));
-$("#ninth-hour .description").val(localStorage.getItem("ninth-hour"));
+var First = first-hour.val(localStorage.getItem("first-hour"));
+var Second = second-hour.val(localStorage.getItem("second-hour"));
+var Third = third-hour.val(localStorage.getItem("third-hour"));
+var Fourth = fourth-hour.val(localStorage.getItem("fourth-hour"));
+var Fifth = fifth-hour.val(localStorage.getItem("fifth-hour"));
+var Sixth = sixth-hour.val(localStorage.getItem("sixth-hour"));
+var Seventh = seventh-hour.val(localStorage.getItem("seventh-hour"));
+var Eighth = eighth-hour.val(localStorage.getItem("eighth-hour"));
+var Ninth = ninth-hour.val(localStorage.getItem("ninth-hour"));
 
 useTimePlanner();
